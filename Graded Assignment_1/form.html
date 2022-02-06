@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100%; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input[type=text]{
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   border: none;
+   border-bottom: 2px solid gray;
+}
+
+button {  
+  background-color: violet;  
+}
+.column{
+    background-color: white
+}
+.input-box{
+    float: left;
+    width: 50%;
+}
+
+</style>
+</head>
+<body>
+<div class="row">
+    <p><b style="font-size: xx-large;">1. Your Contact Details</b></p>
+  <div class="column">
+    <div class="input-box">
+        <input type="text" placeholder="Full Name" required>
+    </div>
+    <div class="input-box">
+        <input type="text" placeholder="Patient Id if exists" required>
+    </div>
+    <div class="input-box">
+        <input type="text" placeholder="Contact Number" required>
+    </div>
+    <div class="input-box">
+        <input type="text" placeholder="Email id" required>
+    </div>
+    <p><b style="font-size: xx-large;">2. Address</b></p>
+    <div class="input-box">
+        <input type="text" placeholder="H-No" required>
+    </div>
+    <div class="input-box">
+        <input type="text" placeholder="Street" required>
+    </div>
+    <div class="input-box">
+        <input type="text" placeholder="Area" required>
+    </div>
+    <div class="input-box">
+        <input type="text">
+    </div>
+    <p><b style="font-size: x-large;">District</b></p>
+    <label for="district"></label>
+    <select id="district" name="district" size="3">
+        <option value="Choose">Choose</option>
+      <option value="Malkajgiri">Malkajgiri</option>
+      <option value="Warangal">Warangal</option>
+      <option value="Nizamabad">Nizamabad</option>
+      <option value="Hyderabad">Hyderabad</option>
+    </select>
+    <p><b style="font-size: xx-large;">3. Choose the Test Type</b></p>
+<input type="checkbox" id="CBC" name="CBC" value="CBC">
+<label for="CBC">CBC</label><br>
+<input type="checkbox" id="Complete Urine" name="Complete Urine" value="Complete Urine">
+<label for="Complete Urine">Complete Urine</label><br>
+<input type="checkbox" id="Lipid Profile" name="Lipid Profile" value="Lipid Profile">
+<label for="Lipid Profile">Lipid Profile</label><br>
+<input type="checkbox" id="TSH" name="TSH" value="TSH">
+<label for="TSH">Thyroid Stimulating Hormone(TSH)</label><br>
+<input type="checkbox" id="Glucose Test" name="Glucose Test" value="Glucose Test">
+<label for="Glucose Test">Glucose Test</label><br>
+<p><b style="font-size: xx-large;">4. Do you want a hard copy of the report also?</b></p>
+<input type="checkbox" id="Yes" name="Yes" value="Yes">
+<label for="Yes">Yes</label><br>
+<input type="checkbox" id="No" name="No" value="No">
+<label for="Yes">No</label><br>
+<p><b style="font-size: xx-large;">5. Select Your Comfortable Date and Time</b></p>
+<label for="Date">Date:</label>
+<input type="date" id="Date" name="Date">
+<label for="Time">Time:</label>
+  <input type="Time" id="Time" name="Time"><br><br><br><br>
+  <button type="reset" value="Reset">Reset</button>
+  <button type="submit" value="Submit">Submit</button>
+ 
+  </div>
+ 
+ 
+  <div class="column" style="background-color:white;">
+    <img src="Images/Lab-Test/lab-test.jpg" style="width:100%"/>
+  </div>
+</div>
+</body>
+</html>
